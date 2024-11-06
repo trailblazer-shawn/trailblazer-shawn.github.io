@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="搭建博客的一些感想在利用hexo在github上搭建个人博客的过程中，遇到了许多error和warning，在师哥的悉心指导和不懈的探索实践中都多少少有一些认识和感悟，现在借助这个新建的平台分享出来，希望对同志们有一些参考意义。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建博客的一些感想">
+<meta property="og:url" content="http://example.com/2024/11/06/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E6%83%B3/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="搭建博客的一些感想在利用hexo在github上搭建个人博客的过程中，遇到了许多error和warning，在师哥的悉心指导和不懈的探索实践中都多少少有一些认识和感悟，现在借助这个新建的平台分享出来，希望对同志们有一些参考意义。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/image/image-20241106163142406.png">
+<meta property="og:image" content="http://example.com/2024/11/06/image/image-20241102173605489.png">
+<meta property="og:image" content="http://example.com/image/image-20241106164328673.png">
+<meta property="og:image" content="http://example.com/2024/11/06/image/75e26410d9646d2ba429a0c81acac5ff.png">
+<meta property="article:published_time" content="2024-11-06T13:06:12.000Z">
+<meta property="article:modified_time" content="2024-11-06T13:19:36.671Z">
+<meta property="article:author" content="Shawn">
+<meta property="article:tag" content="introduction">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/image/image-20241106163142406.png">
+
+
+<link rel="canonical" href="http://example.com/2024/11/06/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E6%83%B3/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/11/06/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E6%83%B3/","path":"2024/11/06/搭建博客的一些感想/","title":"搭建博客的一些感想"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>搭建博客的一些感想 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Hexo</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E6%83%B3"><span class="nav-number">1.</span> <span class="nav-text">搭建博客的一些感想</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">一、学习方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E8%A6%81%E6%93%85%E7%94%A8%E4%BA%92%E8%81%94%E7%BD%91%E6%90%9C%E9%9B%86%E8%B5%84%E6%96%99"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.要擅用互联网搜集资料</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E5%9B%AD%EF%BC%9Ahttps-www-cnblogs-com-chenlove-p-15058170-html"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">博客园：https:&#x2F;&#x2F;www.cnblogs.com&#x2F;chenlove&#x2F;p&#x2F;15058170.html</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9F%A5%E4%B9%8E%EF%BC%9Ahttps-www-zhihu-com-question-20070065-answer-1879847761-utm-psn-1836889692483751937"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">知乎：https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;20070065&#x2F;answer&#x2F;1879847761?utm_psn&#x3D;1836889692483751937</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9F%A5%E4%B9%8E%EF%BC%9Ahttps-zhuanlan-zhihu-com-p-547520780-utm-psn-1836893024484990976"><span class="nav-number">1.1.1.3.</span> <span class="nav-text">知乎：https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;547520780?utm_psn&#x3D;1836893024484990976</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%96%84%E7%94%A8AI-%E4%BB%8E%E8%BF%94%E5%9B%9E%E5%80%BC%E4%B8%AD%E5%88%86%E6%9E%90%E9%94%99%E8%AF%AF%E5%8E%9F%E5%9B%A0"><span class="nav-number">1.1.2.</span> <span class="nav-text">2.善用AI  &amp;  从返回值中分析错误原因</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E4%B8%80%E4%BA%9B%E6%B8%A9%E9%A6%A8%E6%8F%90%E7%A4%BA"><span class="nav-number">1.2.</span> <span class="nav-text">二、一些温馨提示</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%9C%B0%E7%AB%AF%E5%8F%A34000%E6%89%93%E4%B8%8D%E5%BC%80%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.关于本地端口4000打不开的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%85%B3%E4%BA%8Enot-found-git-%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.关于not  found  git 的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E9%99%90%E5%88%B6%E9%80%A0%E6%88%90%E7%9A%84%E9%93%BE%E6%8E%A5%E4%B8%8D%E7%A8%B3%E5%AE%9A%E9%97%AE%E9%A2%98"><span class="nav-number">1.2.3.</span> <span class="nav-text">3.关于网络限制造成的链接不稳定问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%86%99%E5%8D%9A%E5%AE%A2%E6%97%B6%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="nav-number">1.2.4.</span> <span class="nav-text">4.写博客时的一些注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E5%85%B3%E4%BA%8E%E9%83%A8%E7%BD%B2%E5%90%8E%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">1.2.5.</span> <span class="nav-text">5.关于部署后图片无法显示的问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%80%BB%E7%BB%93"><span class="nav-number">1.3.</span> <span class="nav-text">三、总结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#THE-END"><span class="nav-number">2.</span> <span class="nav-text">THE END</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Shawn</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/06/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E6%83%B3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Shawn">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="搭建博客的一些感想 | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          搭建博客的一些感想
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2024-11-06 21:06:12 / Modified: 21:19:36" itemprop="dateCreated datePublished" datetime="2024-11-06T21:06:12+08:00">2024-11-06</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="搭建博客的一些感想"><a href="#搭建博客的一些感想" class="headerlink" title="搭建博客的一些感想"></a>搭建博客的一些感想</h1><p>在利用hexo在github上搭建个人博客的过程中，遇到了许多error和warning，在师哥的悉心指导和不懈的探索实践中都多少少有一些认识和感悟，现在借助这个新建的平台分享出来，希望对同志们有一些参考意义。</p>
+<span id="more"></span>
+
+<p>[TOC]</p>
+<h2 id="一、学习方法"><a href="#一、学习方法" class="headerlink" title="一、学习方法"></a>一、学习方法</h2><h3 id="1-要擅用互联网搜集资料"><a href="#1-要擅用互联网搜集资料" class="headerlink" title="1.要擅用互联网搜集资料"></a>1.要擅用互联网搜集资料</h3><p>我用到的主要参考文章</p>
+<h4 id="博客园：https-www-cnblogs-com-chenlove-p-15058170-html"><a href="#博客园：https-www-cnblogs-com-chenlove-p-15058170-html" class="headerlink" title="博客园：https://www.cnblogs.com/chenlove/p/15058170.html"></a>博客园：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/chenlove/p/15058170.html">https://www.cnblogs.com/chenlove/p/15058170.html</a></h4><p>流程清晰，跟着做没错</p>
+<h4 id="知乎：https-www-zhihu-com-question-20070065-answer-1879847761-utm-psn-1836889692483751937"><a href="#知乎：https-www-zhihu-com-question-20070065-answer-1879847761-utm-psn-1836889692483751937" class="headerlink" title="知乎：https://www.zhihu.com/question/20070065/answer/1879847761?utm_psn=1836889692483751937"></a>知乎：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20070065/answer/1879847761?utm_psn=1836889692483751937">https://www.zhihu.com/question/20070065/answer/1879847761?utm_psn=1836889692483751937</a></h4><p>知乎的这篇文章在git下载安装时众多安装配置的选择，还有在命令框输入命令返回正确代码示例等细节操作问题上，都做了详实的解说，对待小白更加的友好，后面也有一些高级用法，选择性学习</p>
+<h4 id="知乎：https-zhuanlan-zhihu-com-p-547520780-utm-psn-1836893024484990976"><a href="#知乎：https-zhuanlan-zhihu-com-p-547520780-utm-psn-1836893024484990976" class="headerlink" title="知乎：https://zhuanlan.zhihu.com/p/547520780?utm_psn=1836893024484990976"></a>知乎：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/547520780?utm_psn=1836893024484990976">https://zhuanlan.zhihu.com/p/547520780?utm_psn=1836893024484990976</a></h4><p>这篇文章也比较不错，可以结合其他文章综合学习加深理解，此文后还加入了主题设置的教程，可以为自己的博客换上喜欢的主题</p>
+<h3 id="2-善用AI-从返回值中分析错误原因"><a href="#2-善用AI-从返回值中分析错误原因" class="headerlink" title="2.善用AI  &amp;  从返回值中分析错误原因"></a>2.善用AI  &amp;  从返回值中分析错误原因</h3><p>如我在初次上手时遇到了这个返回代码</p>
+<p><img src="/../image/image-20241106163142406.png" alt="image-20241106163142406"></p>
+<p>则通过将问题描述给AI或者直接将返回代码复制粘贴过去，问：</p>
+<blockquote>
+<p>在hexo中，发送hexo d后返回not found git</p>
+</blockquote>
+<p>则AI会给出可能错误原因及解决方案：</p>
+<blockquote>
+<p>当你在使用 Hexo 框架并尝试通过 <code>hexo d</code> 命令部署你的站点到 Git 仓库时，遇到 “not found git” 的错误通常意味着 Hexo 无法找到必要的 Git 配置或环境。这里有几个可能的解决步骤：</p>
+<ol>
+<li><p><strong>确认 Git 是否已安装</strong>：<br>首先，确保你的计算机上已安装了 Git。可以在命令行中运行 <code>git --version</code> 来检查 Git 是否已安装以及其版本。</p>
+</li>
+<li><p><strong>检查 Git 配置</strong>：<br>确保你的 Git 配置正确，包括用户名和邮箱。你可以通过以下命令来设置或检查这些配置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;Your Name&quot;</span>  </span><br><span class="line">git config --global user.email <span class="string">&quot;your.email@example.com&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>检查 Hexo 配置文件</strong>：<br>确保你的 Hexo 配置文件（通常是 <code>_config.yml</code>）中的部署部分配置正确。这通常包括仓库的 URL、分支名称等。例如：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span>  </span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span>  </span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&lt;your-repository-url&gt;.git</span>  </span><br><span class="line">  <span class="attr">branch:</span> <span class="string">&lt;branch-name&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>初始化 Git 仓库</strong>：<br>如果你的项目目录还没有被 Git 初始化，你需要先运行 <code>git init</code> 来初始化一个新的 Git 仓库。</p>
+</li>
+<li><p><strong>添加远程仓库</strong>：<br>如果你还没有添加远程仓库，你需要使用 <code>git remote add origin &lt;repository-url&gt;</code> 命令来添加。</p>
+</li>
+<li><p><strong>提交并推送更改</strong>：<br>在尝试使用 <code>hexo d</code> 部署之前，确保你已经通过 <code>hexo generate</code> 生成了静态文件，并且这些更改已经被提交到本地仓库。你可以使用 <code>git add .</code> 和 <code>git commit -m &quot;your message&quot;</code> 来添加和提交更改。</p>
+</li>
+<li><p><strong>使用命令行手动推送</strong>：<br>如果 <code>hexo d</code> 仍然失败，尝试手动使用 <code>git push -u origin &lt;branch-name&gt;</code> 来推送更改到远程仓库，这可以帮助你更好地理解问题所在。</p>
+</li>
+<li><p><strong>检查环境变量</strong>：<br>在某些情况下，特别是当你使用特定的终端或 IDE 时，可能需要检查环境变量设置，确保 Git 的可执行文件路径被正确添加到 PATH 中。</p>
+</li>
+<li><p><strong>查看错误日志</strong>：<br>仔细阅读 <code>hexo d</code> 命令输出的错误信息，看看是否有更具体的提示可以帮助你定位问题。</p>
+</li>
+<li><p><strong>重新安装 Hexo 和依赖</strong>：<br>如果以上步骤都无法解决问题，尝试重新安装 Hexo 和其依赖，有时候这可以解决一些不明确的问题。</p>
+</li>
+</ol>
+<p>按照这些步骤操作后，你应该能够解决 “not found git” 的错误，并成功使用 Hexo 部署你的站点。如果问题仍然存在，可能需要更详细地检查你的系统配置或寻求社区的帮助。</p>
+</blockquote>
+<h2 id="二、一些温馨提示"><a href="#二、一些温馨提示" class="headerlink" title="二、一些温馨提示"></a>二、一些温馨提示</h2><h3 id="1-关于本地端口4000打不开的问题"><a href="#1-关于本地端口4000打不开的问题" class="headerlink" title="1.关于本地端口4000打不开的问题"></a>1.关于本地端口4000打不开的问题</h3><p>首先要简单了解hexo的运行模式</p>
+<p>首先，在Hexo站点的根目录下，输入<code>hexo g</code>命令来生成静态文件</p>
+<p>然后输入<code>hexo d</code>命令来部署网站。如果配置正确且插件已安装，Hexo将使用Git将网站部署到指定的远程仓库（repository）</p>
+<p>最后输入<code>hexo s</code>进行预览后，会出现本地端口4000的链接，然而很多人（包括我）都打不开这个本地连接，出现“意外终止连接”等提示，可能是被占用，困扰很大，此时应如何解决呢？</p>
+<ol>
+<li>通过控制面板修改端口连接状态（不推荐）</li>
+<li>通过在URL末尾添加’&#x2F;&#x2F;‘，即输入’<a target="_blank" rel="noopener" href="http://localhost:4000//">http://localhost:4000//</a>‘</li>
+<li>另寻他路，通过口令 <code>hexo s -p 5000</code> 将预览端口改为本地端口5000（输入时注意空格）</li>
+</ol>
+<img src="../image/image-20241102173605489.png" alt="image-20241102173605489" style="zoom: 33%;" />
+
+<p>可以看到上图，在换成本地端口5000后顺利地登上了预览界面</p>
+<h3 id="2-关于not-found-git-的问题"><a href="#2-关于not-found-git-的问题" class="headerlink" title="2.关于not  found  git 的问题"></a>2.关于not  found  git 的问题</h3><p>其实通过AI和互联网大部分问题都能解决，也包括这个</p>
+<p>主要解决办法有</p>
+<p>1.重新检查Git是否安装，通过指令<code>git --version</code></p>
+<p>2.检查_config.yml文件，打开根目录中的<code>_config.yml</code>配置文件（包括密钥配置，主题设置等重要操作都要用到这个文件），确保在配置文件中正确设置了Git部署的相关参数，如repository（仓库地址）、branch（分支名称）等</p>
+<p>最后看到这个代码，且没有红色错误和黄色警告的提示时，就算部署成功了</p>
+<p><img src="/../image/image-20241106164328673.png" alt="image-20241106164328673"></p>
+<h3 id="3-关于网络限制造成的链接不稳定问题"><a href="#3-关于网络限制造成的链接不稳定问题" class="headerlink" title="3.关于网络限制造成的链接不稳定问题"></a>3.关于网络限制造成的链接不稳定问题</h3><p>请详见上一篇文章：<a target="_blank" rel="noopener" href="https://trailblazer-shawn.github.io/#ClashForWindows-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E">https://trailblazer-shawn.github.io/#ClashForWindows-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E</a></p>
+<h3 id="4-写博客时的一些注意事项"><a href="#4-写博客时的一些注意事项" class="headerlink" title="4.写博客时的一些注意事项"></a>4.写博客时的一些注意事项</h3><p>用<code>hexo new</code> 生成一篇新博客后，看到文件夹里的md文件中最顶部有tag一项，不要自己随便取名写上去</p>
+<p>tags是分类页面，没通过命令<code>hexo new pages tags</code>创建，hexo是找不到这个页面的</p>
+<p>还有就是注意一切代码的格式错误，尤其是这里应不应该加空格！</p>
+<h3 id="5-关于部署后图片无法显示的问题"><a href="#5-关于部署后图片无法显示的问题" class="headerlink" title="5.关于部署后图片无法显示的问题"></a>5.关于部署后图片无法显示的问题</h3><img src="../image/75e26410d9646d2ba429a0c81acac5ff.png" alt="75e26410d9646d2ba429a0c81acac5ff" style="zoom:50%;" />
+
+<p>打开typora的偏好设置，..&#x2F;表示上一层目录，也就是说你在typora里面保存的图片会自动保存在你笔记目录的上一层目录，如果新生成的md文件中的图片，复制路径没有在指定文件夹，则hexo就找不到了</p>
+<h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><p>每个人在实际操作中遇到的问题不尽相同，我提到的问题仅仅是我个人所遇到的问题，远远不够</p>
+<p>但只要掌握正确的方法，合理利用网络资源，通过自己的探索，或许有他人的点拨，将问题解决，将会在学到更多知识的同时，收获守得云开见月明的欣喜与成就感</p>
+<h1 id="THE-END"><a href="#THE-END" class="headerlink" title="THE END"></a>THE END</h1>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/introduction/" rel="tag"># introduction</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/11/03/ClashForWindows%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" rel="prev" title="ClashForWindows使用说明">
+                  <i class="fa fa-angle-left"></i> ClashForWindows使用说明
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Shawn</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
